@@ -19,9 +19,7 @@ services:
     ports:
       - "9000:9000"
     volumes:
-      - ./start.sh:/opt/sonarqube/start.sh
       - ./sonar-dependency-check-plugin-1.1.0.jar:/opt/sonarqube/extensions/plugins/sonar-dependency-check-plugin-1.1.0.jar
-    entrypoint: /opt/sonarqube/start.sh
     environment:
       - USER_LOGIN=<your-login>
       - USER_NAME=<your-name>
